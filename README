@@ -1,0 +1,212 @@
+libannodex
+------------------------------------------
+libannodex is a library that provides a complete programming interface
+for reading and writing Annodex media. It has a simple, callback based
+open/read/close or open/write/close interface to Annodex media and
+embedded CMML clips. Its plugin based importing framework provides
+temporal interleaving of multiple media and annotations data sources.
+
+Runtime requirements:
+  cygwin-1.5.20-1 (>=20060604)
+  libcmml0-0.9.1-1
+  libogg0-1.1.2-1
+  liboggz1-0.9.5-1
+  libsndfile1-1.0.16-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1 (>=20060604)
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.1-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical website:
+  http://annodex.net/software/libannodex/
+
+Canonical download:
+  http://annodex.net/software/libannodex/download/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libannodex-0.7.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libannodex-0.7.3-X.cygport all
+
+This will create:
+  /usr/src/libannodex-0.7.3-X-src.tar.bz2
+  /usr/src/libannodex-0.7.3-X.tar.bz2
+  /usr/src/libannodex-devel-0.7.3-X.tar.bz2
+  /usr/src/libannodex-doc-0.7.3-X.tar.bz2
+  /usr/src/libannodex0-0.7.3-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary packages:
+
+(libannodex)
+  /usr/bin/anxcheck.exe
+  /usr/bin/anxed.exe
+  /usr/bin/anxenc.exe
+  /usr/bin/anxgrep.exe
+  /usr/bin/anxinfo.exe
+  /usr/bin/anxrip.exe
+  /usr/share/doc/Cygwin/libannodex-0.7.3.README
+  /usr/share/doc/libannodex-0.7.3/AUTHORS
+  /usr/share/doc/libannodex-0.7.3/COPYING
+  /usr/share/doc/libannodex-0.7.3/ChangeLog
+  /usr/share/doc/libannodex-0.7.3/INSTALL
+  /usr/share/doc/libannodex-0.7.3/README
+  /usr/share/doc/libannodex-0.7.3/TODO
+  /usr/share/man/man1/anxenc.1.gz
+  /usr/share/man/man1/anxgrep.1.gz
+  /usr/share/man/man1/anxinfo.1.gz
+  /usr/share/man/man1/anxrip.1.gz
+
+(libannodex0)
+  /usr/bin/cygannodex-0.dll
+  /usr/lib/annodex/importers/cyganx_import_anx-0.dll
+  /usr/lib/annodex/importers/cyganx_import_cmml-0.dll
+  /usr/lib/annodex/importers/cyganx_import_ogg-0.dll
+  /usr/lib/annodex/importers/cyganx_import_sndfile-0.dll
+
+(libannodex-devel)
+  /usr/include/annodex/annodex.h
+  /usr/include/annodex/anx_constants.h
+  /usr/include/annodex/anx_core.h
+  /usr/include/annodex/anx_deprecated.h
+  /usr/include/annodex/anx_general.h
+  /usr/include/annodex/anx_import.h
+  /usr/include/annodex/anx_int64.h
+  /usr/include/annodex/anx_list.h
+  /usr/include/annodex/anx_params.h
+  /usr/include/annodex/anx_read.h
+  /usr/include/annodex/anx_track.h
+  /usr/include/annodex/anx_types.h
+  /usr/include/annodex/anx_write.h
+  /usr/lib/annodex/importers/libanx_import_anx.la
+  /usr/lib/annodex/importers/libanx_import_cmml.la
+  /usr/lib/annodex/importers/libanx_import_ogg.la
+  /usr/lib/annodex/importers/libanx_import_sndfile.la
+  /usr/lib/libannodex.dll.a
+  /usr/lib/libannodex.la
+  /usr/lib/pkgconfig/annodex.pc
+
+(libannodex-doc)
+  /usr/share/doc/libannodex-0.7.3/html/annodex_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/annodex_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/annotated.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__constants_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__constants_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__core_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__core_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__deprecated_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__deprecated_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__general_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__general_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__import_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__import_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__int64_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__int64_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__int64__w32_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__int64__w32_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__list_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__list_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__params_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__params_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__read_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__read_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__read__dox_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__track_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__track_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__types_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__types_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__write_8h-source.html
+  /usr/share/doc/libannodex-0.7.3/html/anx__write_8h.html
+  /usr/share/doc/libannodex-0.7.3/html/bug.html
+  /usr/share/doc/libannodex-0.7.3/html/doxygen.css
+  /usr/share/doc/libannodex-0.7.3/html/doxygen.png
+  /usr/share/doc/libannodex-0.7.3/html/files.html
+  /usr/share/doc/libannodex-0.7.3/html/globals.html
+  /usr/share/doc/libannodex-0.7.3/html/globals_defs.html
+  /usr/share/doc/libannodex-0.7.3/html/globals_enum.html
+  /usr/share/doc/libannodex-0.7.3/html/globals_eval.html
+  /usr/share/doc/libannodex-0.7.3/html/globals_func.html
+  /usr/share/doc/libannodex-0.7.3/html/globals_type.html
+  /usr/share/doc/libannodex-0.7.3/html/group__basics.html
+  /usr/share/doc/libannodex-0.7.3/html/group__building.html
+  /usr/share/doc/libannodex-0.7.3/html/group__configuration.html
+  /usr/share/doc/libannodex-0.7.3/html/group__install.html
+  /usr/share/doc/libannodex-0.7.3/html/group__reading.html
+  /usr/share/doc/libannodex-0.7.3/html/group__reading__callbacks.html
+  /usr/share/doc/libannodex-0.7.3/html/group__reading__files.html
+  /usr/share/doc/libannodex-0.7.3/html/group__reading__memory.html
+  /usr/share/doc/libannodex-0.7.3/html/group__writing.html
+  /usr/share/doc/libannodex-0.7.3/html/group__writing__files.html
+  /usr/share/doc/libannodex-0.7.3/html/hierarchy.html
+  /usr/share/doc/libannodex-0.7.3/html/index.html
+  /usr/share/doc/libannodex-0.7.3/html/modules.html
+  /usr/share/doc/libannodex-0.7.3/html/pages.html
+  /usr/share/doc/libannodex-0.7.3/html/struct__AnxTrack.html
+  /usr/share/doc/libannodex-0.7.3/html/structmy__data.html
+  /usr/share/doc/libannodex-0.7.3/html/tab_b.gif
+  /usr/share/doc/libannodex-0.7.3/html/tab_l.gif
+  /usr/share/doc/libannodex-0.7.3/html/tab_r.gif
+  /usr/share/doc/libannodex-0.7.3/html/tabs.css
+  /usr/share/doc/libannodex-0.7.3/latex/Helvetica.ttf
+  /usr/share/doc/libannodex-0.7.3/latex/Makefile
+  /usr/share/doc/libannodex-0.7.3/latex/annodex_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/annotated.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__constants_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__core_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__deprecated_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__general_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__import_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__int64_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__int64__w32_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__list_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__params_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__read_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__track_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__types_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/anx__write_8h.tex
+  /usr/share/doc/libannodex-0.7.3/latex/bug.tex
+  /usr/share/doc/libannodex-0.7.3/latex/doxygen.sty
+  /usr/share/doc/libannodex-0.7.3/latex/files.tex
+  /usr/share/doc/libannodex-0.7.3/latex/group__basics.tex
+  /usr/share/doc/libannodex-0.7.3/latex/group__building.tex
+  /usr/share/doc/libannodex-0.7.3/latex/group__configuration.tex
+  /usr/share/doc/libannodex-0.7.3/latex/group__install.tex
+  /usr/share/doc/libannodex-0.7.3/latex/group__reading.tex
+  /usr/share/doc/libannodex-0.7.3/latex/group__reading__callbacks.tex
+  /usr/share/doc/libannodex-0.7.3/latex/group__reading__files.tex
+  /usr/share/doc/libannodex-0.7.3/latex/group__reading__memory.tex
+  /usr/share/doc/libannodex-0.7.3/latex/group__writing.tex
+  /usr/share/doc/libannodex-0.7.3/latex/group__writing__files.tex
+  /usr/share/doc/libannodex-0.7.3/latex/hierarchy.tex
+  /usr/share/doc/libannodex-0.7.3/latex/index.tex
+  /usr/share/doc/libannodex-0.7.3/latex/modules.tex
+  /usr/share/doc/libannodex-0.7.3/latex/pages.tex
+  /usr/share/doc/libannodex-0.7.3/latex/refman.tex
+  /usr/share/doc/libannodex-0.7.3/latex/struct__AnxTrack.tex
+  /usr/share/doc/libannodex-0.7.3/latex/structmy__data.tex
+
+------------------
+
+Port Notes:
+
+----- version 0.7.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

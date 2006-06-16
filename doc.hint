@@ -1,0 +1,9 @@
+category: Audio Doc
+external-source: libannodex
+sdesc: "Annodex media library (documentation)"
+ldesc: "libannodex is a library that provides a complete programming
+interface for reading and writing Annodex media. It has a simple,
+callback based open/read/close or open/write/close interface to Annodex
+media and embedded CMML clips. Its plugin based importing framework
+provides temporal interleaving of multiple media and annotations data
+sources."
