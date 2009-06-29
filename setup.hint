@@ -1,5 +1,5 @@
 category: Audio
-requires: cygwin libannodex0
+requires: libannodex0
 sdesc: "Annodex media library (utilities)"
 ldesc: "libannodex is a library that provides a complete programming
 interface for reading and writing Annodex media. It has a simple,
